@@ -18,7 +18,7 @@ public class AuctionScheduler {
 	@Autowired
 	private AuctionItemDao auctionItemDao;
 
-	//@Scheduled(fixedDelay=24L*60L*60L*1000L)
+	@Scheduled(fixedDelay=24L*60L*60L*1000L)
 	public void scheduleAuction() {
 		//get the auctions scheduled for today
 		long millis=System.currentTimeMillis(); 
